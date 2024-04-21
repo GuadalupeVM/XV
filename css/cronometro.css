@@ -1,0 +1,46 @@
+.contenedor-cronometro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* ... (estilos CSS anteriores) ... */
+
+.contador {
+    display: flex; /* Permite que el texto y el número se posicionen uno al lado del otro */
+    flex-direction: column;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #E9A89B;
+    color: #fff;
+    font-size: 20px; /* Ajusta el tamaño de la letra */
+    text-align: center;
+    line-height: 60px;
+    margin: 0 10px;
+    animation: pulsacion 1.2s ease-in-out infinite; /* Animación de pulsación */
+}
+
+.unidad {
+    margin-right: 5px; /* Espacio entre el texto y el número */
+    margin-top: -90px;
+}
+
+.numero {
+    font-size: 30px; /* Ajusta el tamaño del número */
+}
+
+@keyframes pulsacion {
+    0% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1); /* Tamaño más grande */
+    }
+    100% {
+        transform: scale(1); /* Vuelve al tamaño normal */
+    }
+}
